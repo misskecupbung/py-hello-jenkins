@@ -1,8 +1,9 @@
 node {
-    checkout scm
+    stage('Checkout') {
+        checkout scm
+    }
+
     stage('Build') {
-        step {
-            sh 'python hello.py'
-        }
+        sh "python hello.py"
     }
 }
