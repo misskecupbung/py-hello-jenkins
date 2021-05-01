@@ -1,7 +1,7 @@
-node('docker') {
+node {
     checkout scm
     stage('Build') {
-        docker.image('python:3.5.1').inside {
+        step {
             sh 'python hello.py'
         }
     }
