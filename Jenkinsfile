@@ -4,6 +4,6 @@ node {
     }
 
     stage('Build') {
-        sh "python hello.py"
+        sh "python3 hello.py"
     }
 }
